@@ -1,0 +1,12 @@
+ship_name: Lion
+nationality: british
+armor:
+  belt: 8
+  deck: 1
+armament:
+  main: 13.5
+  turrets: 4
+  type: 2
+propulsion:
+  type: turbine
+  max_speed: 26

@@ -1,0 +1,12 @@
+ship_name: Seydlitz
+nationality: german
+armor:
+  belt: 12
+  deck: 2
+armament:
+  main: 11
+  turrets: 5
+  type: 2
+propulsion:
+  type: turbine
+  max_speed: 24
