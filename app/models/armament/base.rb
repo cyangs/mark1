@@ -1,4 +1,4 @@
-class Armament::Base
+class Armament::Base < ActiveRecord::Base
 
   attr_reader :base_penetration
 

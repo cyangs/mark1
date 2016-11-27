@@ -1,9 +1,6 @@
 require 'yaml'
 require 'json'
 
-require_relative '/Users/calvin/desktop/Mk1/exceptions.rb'
-require '/Users/calvin/desktop/MK1/armament/'
-
 SHIP_CONSTANTS = [
   "nationality",
   "propulsion",

@@ -1,5 +1,4 @@
-class Ships::Dreadnought < Ships::Base
-  
+class Ship::Dreadnought < Ship::Base
   attr_reader :ship_name
 
   def initialize(ship_name)
