@@ -3,22 +3,18 @@ class Ship < ActiveRecord::Base
   has_one :propulsion
   has_one :armor
 
-  def initialize(name)
-    binding.pry
-
-  end
+  validates_presence_of :name, :nationality, :class
+  validates_uniqueness_of :name
 
   def build_ship
-
-
+  
+  
   end
-
 
   def arm_ship
 
 
   end
-
 
   private
 

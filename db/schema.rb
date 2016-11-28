@@ -15,34 +15,35 @@ ActiveRecord::Schema.define(version: 20161127023113) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "armament", force: :cascade do |t|
+  create_table "armaments", force: :cascade do |t|
     t.integer "ship_id"
     t.integer "turrets"
     t.integer "caliber"
     t.integer "guns"
-    t.index ["ship_id"], name: "index_armament_on_ship_id", using: :btree
+    t.index ["ship_id"], name: "index_armaments_on_ship_id", using: :btree
   end
 
-  create_table "armor", force: :cascade do |t|
+  create_table "armors", force: :cascade do |t|
     t.integer "ship_id"
     t.integer "belt"
     t.integer "deck"
-    t.index ["ship_id"], name: "index_armor_on_ship_id", using: :btree
+    t.index ["ship_id"], name: "index_armors_on_ship_id", using: :btree
   end
 
-  create_table "propulsion", force: :cascade do |t|
+  create_table "propulsions", force: :cascade do |t|
     t.integer "ship_id"
-    t.text    "type"
+    t.string  "type"
     t.integer "max_speed"
-    t.index ["ship_id"], name: "index_propulsion_on_ship_id", using: :btree
+    t.index ["ship_id"], name: "index_propulsions_on_ship_id", using: :btree
   end
 
   create_table "ships", force: :cascade do |t|
-    t.text     "name"
-    t.text     "nationality"
-    t.text     "class"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.string   "name"
+    t.string   "nationality"
+    t.string   "ship_class"
+    t.string   "status",      default: "active"
+    t.datetime "created_at",                     null: false
+    t.datetime "updated_at",                     null: false
   end
 
 end
