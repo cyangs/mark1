@@ -15,8 +15,10 @@ class Ship < ActiveRecord::Migration[5.0]
       t.integer :turrets
       t.integer :caliber
       t.integer :guns
+      t.integer :muzzle_velocity
+      t.integer :penetration
     end
-
+    
     create_table :armors do |t|
       t.belongs_to :ship, index: true
       t.integer :ship_id

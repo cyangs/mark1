@@ -1,8 +1,9 @@
 class Ship::Base
 
-  def initialize
+  def shell_flight_time
+
+
 
   end
-
 
 end

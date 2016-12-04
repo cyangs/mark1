@@ -1,6 +1,7 @@
-t-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /*
@@ -124,14 +125,13 @@ a.pure-button-primary {
     color: #AECFE5;
 }
 
-
 /*
  * -- SPLASH STYLES --
  * This is the blue top section that appears on the page.
  */
 
 .splash-container {
-    background: #1f8dd6;
+    background:url(jutland.jpg) no-repeat center top #FFF;
     z-index: 1;
     overflow: hidden;
     /* The following styles are required for the "scroll-over" effect */

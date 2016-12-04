@@ -20,6 +20,8 @@ ActiveRecord::Schema.define(version: 20161127023113) do
     t.integer "turrets"
     t.integer "caliber"
     t.integer "guns"
+    t.integer "muzzle_velocity"
+    t.integer "penetration"
     t.index ["ship_id"], name: "index_armaments_on_ship_id", using: :btree
   end
 
