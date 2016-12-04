@@ -1,12 +1,11 @@
-require 'yaml'
-
-class Mk1
-
+class SimulationController < ApplicationController
   attr_reader :ship
 
-  def initialize
+  def show
 
   end
+
+  private
 
   def add_ship(ship_class, ship_name)
     new_ship = Ship.new(ship_class, ship_name)

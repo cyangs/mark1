@@ -7,3 +7,4 @@ Things you may want to cover:
 
 Database:
 * rake db:drop db:create db:migrate
+* rails db:seed
